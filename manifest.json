@@ -1,0 +1,18 @@
+{
+    "manifest_version":3,
+    "name":"Chrome kittinify Extention",
+    "version":"0.1",
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["kitten.js"],
+            "web_accessible_resources":[
+             "Kitten1.jpg",
+             "Kitten2.jpg",
+             "Kitten3.jpg",
+             "Kitten4.jpg",
+             "Kitten5.jpg"                
+            ]
+        }
+    ]
+}

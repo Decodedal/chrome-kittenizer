@@ -11,12 +11,14 @@ let imgs = document.getElementsByTagName('img');
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 for (imgElt of imgs){
-    let index = random(0,4)
-    // console.log(imgElt.src);
-    let width = imgElt.clientHeight
-    let height = imgElt.clientWidth
-    if(width === 0) width = 300
-    if(height > 500) height = 500
+    // let index = random(0,4)
+    // // console.log(imgElt.src);
+    // let width = imgElt.clientHeight
+    // let height = imgElt.clientWidth
+    // if(width === 0) width = 300
+    // if(height > 500) height = 500
+    let height = random(300,600)
+    let width = random(300,600)
     console.log(width, height)
     imgElt.src = `https://placekitten.com/${width}/${height}`
 }
